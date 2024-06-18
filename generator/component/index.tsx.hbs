@@ -7,7 +7,6 @@
 {{#if memo}}
     import { memo } from 'react';
 {{/if}}
-import PropTypes from 'prop-types';
 
 function {{ properCase name }}() {
 return (
@@ -16,8 +15,6 @@ return (
 </div>
 );
 }
-
-{{ properCase name }}.propTypes = {};
 
 {{#if memo}}
     export default memo({{ properCase name }});

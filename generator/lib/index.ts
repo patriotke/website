@@ -37,14 +37,14 @@ export default {
     const actions = [
       {
         type: 'add',
-        path: '../src/lib/{{camelCase name}}.js',
-        templateFile: './lib/lib.js.hbs',
+        path: '../src/lib/{{camelCase name}}.ts',
+        templateFile: './lib/lib.ts.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/lib/tests/{{camelCase name}}.test.js',
-        templateFile: './lib/test.js.hbs',
+        path: '../src/lib/tests/{{camelCase name}}.test.ts',
+        templateFile: './lib/test.ts.hbs',
         abortOnFail: true,
       },
     ];

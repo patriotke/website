@@ -39,20 +39,20 @@ export default {
     const actions = [
       {
         type: 'add',
-        path: '../src/components/{{properCase name}}/index.js',
-        templateFile: './component/index.js.hbs',
+        path: '../src/components/{{properCase name}}/index.tsx',
+        templateFile: './component/index.tsx.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{properCase name}}/tests/index.test.js',
-        templateFile: './component/test.js.hbs',
+        path: '../src/components/{{properCase name}}/tests/index.test.tsx',
+        templateFile: './component/test.tsx.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{properCase name}}/stories/{{properCase name}}.stories.js',
-        templateFile: './component/stories.js.hbs',
+        path: '../src/components/{{properCase name}}/stories/{{properCase name}}.stories.tsx',
+        templateFile: './component/stories.tsx.hbs',
         abortOnFail: true,
       },
     ];

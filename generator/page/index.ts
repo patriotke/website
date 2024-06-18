@@ -59,12 +59,12 @@ export default {
   actions: (data: IInputDir) => {
     // Generate index.js and index.test.js
     const dir = data.dirname ? `${data.dirname}/` : '';
-    const path = `../src/app/${data.parentDir}/${dir}/{{dashCase name}}/page.js`;
+    const path = `../src/app/${data.parentDir}/${dir}/{{dashCase name}}/page.tsx`;
     const actions = [
       {
         path,
         type: 'add',
-        templateFile: './page/page.js.hbs',
+        templateFile: './page/page.tsx.hbs',
         abortOnFail: true,
       },
     ];

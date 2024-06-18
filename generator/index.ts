@@ -48,7 +48,7 @@ export default (plop: NodePlopAPI) => {
         '/../src/',
         config.path,
         '**',
-        `${plop.getHelper(config.format)(answers.name)}*.js`,
+        `${plop.getHelper(config.format)(answers.name)}*.@(ts|tsx)`,
       )}`;
       console.log(pattern);
       execSync(`npm run prettify -- "${pattern}"`);
@@ -62,7 +62,7 @@ export default (plop: NodePlopAPI) => {
         ? plop.getHelper(config.format)(answers.name)
         : plop.getHelper('properCase')(answers.name),
       '**',
-      '**.js',
+      '**.@(ts|tsx)',
     )}`;
     execSync(`npm run prettify -- "${folderPath}"`);
     return folderPath;
