@@ -1,0 +1,26 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+{{#if memo}}
+    import { memo } from 'react';
+{{/if}}
+import PropTypes from 'prop-types';
+
+function {{ properCase name }}() {
+return (
+<div>
+    {{properCase name}}
+</div>
+);
+}
+
+{{ properCase name }}.propTypes = {};
+
+{{#if memo}}
+    export default memo({{ properCase name }});
+{{else}}
+    export default {{ properCase name }};
+{{/if}}

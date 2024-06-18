@@ -1,0 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import '@testing-library/jest-dom'
+import { render, screen } from '@testing-library/react'
+import {{{ properCase name }}} from '../index';
+
+describe('{{ properCase name }}', () => {
+it('renders a heading', () => {
+render(<{{ properCase name }} />)
+
+const { container } = render(<{{ properCase name }} />)
+expect(container).toMatchSnapshot()
+})
+})
