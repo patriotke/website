@@ -67,6 +67,12 @@ export default {
         templateFile: './page/page.tsx.hbs',
         abortOnFail: true,
       },
+      {
+        type: 'add',
+        path: `../src/app/${data.parentDir}/${dir}/{{dashCase name}}/tests/index.test.tsx`,
+        templateFile: './page/test.tsx.hbs',
+        abortOnFail: true,
+      },
     ];
 
     actions.push({
