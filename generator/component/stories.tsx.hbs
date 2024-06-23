@@ -1,11 +1,12 @@
 
 // {{ properCase name }}.stories.js
 
+import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import {{{ properCase name }}} from '../index';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-export default {
+const meta = {
 title: 'Components/{{ properCase name }}',
 component: {{ properCase name }},
 parameters: {
@@ -19,12 +20,14 @@ argTypes: {
 backgroundColor: { control: 'color' },
 },
 // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-// args: { onClick: fn() },
-};
+args: { onClick: fn() },
+} satisfies Meta<typeof {{ properCase name }}>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
-args: {
-
-},
+export const Primary: Story = {
+    args: {
+    },
 };
