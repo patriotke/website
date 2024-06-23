@@ -50,7 +50,7 @@ export default (plop: NodePlopAPI) => {
         '**',
         `${plop.getHelper(config.format)(answers.name)}*.@(ts|tsx)`,
       )}`;
-      console.log(pattern);
+
       execSync(`npm run prettify -- "${pattern}"`);
       return pattern;
     }
