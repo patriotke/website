@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js && npm run lint:next",
     "lint:next": "next lint",
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern generator",
     "lint:eslint:fix": "eslint --ignore-path .gitignore --ignore-pattern generator --fix -- \"./src/**/*+(.js|.jsx|.mjs|.ts|.tsx)\"",
