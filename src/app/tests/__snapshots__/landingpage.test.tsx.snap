@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage renders LandingPage 1`] = `
+<div>
+  <main
+    class="flex min-h-screen flex-col items-center justify-between p-24"
+  >
+     
+  </main>
+</div>
+`;
