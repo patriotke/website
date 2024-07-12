@@ -14,6 +14,12 @@ export const getHeaderLinks = (): ILink[] => [
     id: 'contribute',
     active: false,
   },
+  {
+    href: '/submit',
+    text: 'Submit',
+    id: 'submit',
+    active: false,
+  },
 ];
 
 export const getStatefulLinks =

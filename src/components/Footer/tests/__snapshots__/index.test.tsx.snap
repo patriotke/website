@@ -2,8 +2,28 @@
 
 exports[`Footer renders Footer 1`] = `
 <div>
-  <div>
-    Footer
+  <div
+    class="bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent"
+  >
+    <hr
+      class="dark:border-neutral-800"
+    />
+    <div
+      class="mx-auto flex max-w-[90rem] justify-center py-12 text-gray-600 dark:text-gray-400 md:justify-start pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)]"
+    >
+      <div
+        class="flex w-full flex-col items-center sm:items-start"
+      >
+        <div>
+          App
+        </div>
+        <p
+          class="mt-6 text-xs"
+        >
+          2024
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;

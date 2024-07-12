@@ -5,7 +5,16 @@
  */
 import Link from 'next/link';
 import { clsx } from 'clsx';
-import { IHeader } from '@/types/header.types';
+
+export type ILink = {
+  href: string;
+  text: string;
+  active: boolean;
+  id: string;
+};
+export type IHeader = {
+  links: ILink[];
+};
 
 function Header({ links = [] }: IHeader) {
   return (
