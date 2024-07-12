@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmissionPane renders SubmissionPane 1`] = `
+<div>
+  <div>
+    SubmissionPane
+  </div>
+</div>
+`;

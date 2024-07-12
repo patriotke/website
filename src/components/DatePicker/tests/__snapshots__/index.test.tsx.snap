@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker renders DatePicker 1`] = `
+<div>
+  <div>
+    DatePicker
+  </div>
+</div>
+`;

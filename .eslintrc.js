@@ -1,5 +1,12 @@
 module.exports = {
   root: true,
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src', '.'],
+      },
+    },
+  },
   extends: [
     'next/core-web-vitals',
     'airbnb',
