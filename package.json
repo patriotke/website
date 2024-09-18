@@ -33,7 +33,7 @@
     "generate": "^0.14.0",
     "lucide-react": "^0.399.0",
     "monio": "^0.53.0",
-    "next": "14.2.4",
+    "next": "14.2.12",
     "octokit": "^4.0.2",
     "react": "^18",
     "react-day-picker": "^8.10.1",
